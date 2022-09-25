@@ -1,0 +1,13 @@
+<div *ngFor="let item of cart">
+   <h4 *ngIf="isItemDisplayed(item.sessions)"> {{item.title}} </h4> 
+   <div *ngFor="let session of item.sessions | sortSessions">
+        <div class="row" *ngIf="session.quantity">
+            <div class="col-10"><p>{{session.date | date:'dd/MM/yyyy'}}</p></div>
+            <div class="col-1"><p>x{{session.quantity}}</p></div>
+            <div class="col-1" (click)="deleteEvent(item.id, item.title, session)">
+                <img src="assets/img/trash.png" alt="Trash icon" width="20" height="auto">
+            </div>         
+        </div>
+    </div>    
+</div>
+<button type="button" (click)="checkout()" class="btn mt-4">Comprar</button>

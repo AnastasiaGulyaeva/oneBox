@@ -1,0 +1,14 @@
+@import "../../../variables.scss";
+
+.container {
+    margin-top: 26px;
+}
+
+.fa-minus, .fa-plus {
+    color: $blue !important;
+    margin: 0 6px;
+}
+
+.blue {
+    color: $blue;
+}

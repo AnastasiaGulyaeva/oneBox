@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+p {
+    margin-bottom: 0;
+}
+
+.btn{
+    background-color: $blue;
+    border: none;
+    width: 100%;
+    border-radius: 0%;
+    color: $white;
+    &:hover {
+        background-color: $dark-blue;
+        color: $white;
+    }
+}
